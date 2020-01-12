@@ -20,7 +20,9 @@ class DrawingUtil {
         context.fillStyle = foreColor
         context.save()
         context.translate(0, gap * (i + 1))
-        DrawingUtil.drawScaleDownCircle(context, i, scale, w)
+        for (var j = 0; j < circles; j++) {
+            DrawingUtil.drawScaleDownCircle(context, j, scale, w)
+        }
         context.restore()
     }
 }

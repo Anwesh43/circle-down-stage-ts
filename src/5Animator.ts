@@ -5,8 +5,8 @@ class Animator {
 
     start(cb : Function) {
         if (!this.animated) {
-            this.animated = false
-            setInterval(cb, delay)
+            this.animated = true
+            this.interval = setInterval(cb, delay)
         }
     }
 
