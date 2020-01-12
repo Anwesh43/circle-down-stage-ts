@@ -1,4 +1,3 @@
-const delay : number = 30
 class Animator {
 
     animated : boolean = false

@@ -1,7 +1,9 @@
 class DrawingUtil {
 
     static drawCircle(context : CanvasRenderingContext2D, x : number, y : number, r : number) {
-        context.drawArc(context, x, y, r, 0, 2 * Math.PI)
+        context.beginPath()
+        context.arc(x, y, r, 0, 2 * Math.PI)
+        context.fill()
     }
 
     static drawScaleDownCircle(context : CanvasRenderingContext2D, i : number, scale : number, w : number) {

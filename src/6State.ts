@@ -1,4 +1,3 @@
-const scGap : number = 0.02
 class State {
 
     dir : number = 0
