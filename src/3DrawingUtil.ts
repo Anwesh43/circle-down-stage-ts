@@ -17,6 +17,7 @@ class DrawingUtil {
 
     static drawSDCNode(context : CanvasRenderingContext2D, i : number, scale : number) {
         const gap : number = h / (nodes + 1)
+        context.fillStyle = foreColor
         context.save()
         context.translate(0, gap * (i + 1))
         DrawingUtil.drawScaleDownCircle(context, i, scale, w)
