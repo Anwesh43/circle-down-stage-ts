@@ -4,3 +4,5 @@ const nodes : number = 5
 const circles : number = 5
 const scGap : number = 0.02
 const delay : number = 20
+const backColor : string = '#bdbdbd'
+const foreColor : string = "#01579B"
